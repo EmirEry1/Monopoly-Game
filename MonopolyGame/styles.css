@@ -1,0 +1,435 @@
+
+/* height: 625px;
+width: 1366px; */
+
+body{
+  position: relative;
+  margin: 0;
+  background-color: white;
+  text-align: center;
+}
+
+.game-board{
+
+
+  position: relative;
+  margin:12.5px 33px 12.5px 33px;
+  width: 1300px;
+  height: 600px;
+  background-color: green;
+
+
+
+}
+
+.corner-box{
+
+  background-color: orange;
+  width: 100px;
+  height: 100px;
+  border: 0;
+  position: absolute;
+
+
+}
+
+.top-left{
+
+
+}
+
+.top-right{
+  left: 1200px;
+}
+
+.bottom-left{
+  top:500px;
+}
+
+.bottom-right{
+  left: 1200px;
+  top:500px;
+}
+
+.card{
+  background-color: red;
+  height: 70px;
+  width: 90px;
+  position: absolute;
+  border: 5px solid #000;
+
+}
+
+.upgrade{
+  background-color: blue;
+  height: 140px;
+}
+.downgrade{
+  background-color: grey;
+
+
+}
+.row{
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+.column{
+
+}
+
+.turn-bar{
+  height: 80px;
+  width: 300px;
+  background-color: white;
+  position: absolute;
+  border: 5px solid black;
+  left:500px;
+  top:120px;
+
+
+}
+
+.player-bar{
+  background-color: white;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  border:5px solid black;
+
+}
+ .player-bar h1{
+   margin-bottom: 10px;
+   margin-top: 10px;
+ }
+
+.dice{
+  width:100px;
+  height:100px;
+  position: absolute;
+    bottom:110px;
+
+}
+
+.first-die{
+  left: 450px;
+}
+.second-die{
+  right:450px;
+}
+.roll-dice{
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  bottom: 110px;
+  left:575px;
+  border-radius: 20%;
+  border: 5px solid black;
+
+}
+.sell-alert{
+  width: 150px;
+  height: 100px;
+  position: absolute;
+  bottom: 110px;
+  left:575px;
+  border-radius: 20%;
+  border: 5px solid black;
+  opacity: 0;
+  display: none;
+
+}
+
+
+.buy-button{
+  position: absolute;
+  border-radius: 20%;
+  border: 5px solid black;
+  left: 610px;
+  bottom: 250px;
+  width: 80px;
+  height: 80px;
+
+}
+
+.player-image{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+
+}
+
+.circle{
+  left: 25px;
+  bottom: 25px;
+}
+.square{
+  left: 25px;
+  bottom: 25px;
+}
+.triangle{
+  left: 25px;
+  bottom: 25px;
+}
+.hexagon{
+  left: 25px;
+  bottom: 25px;
+}
+
+
+.player-1{
+  left:100px;
+  top:100px;
+}
+.player-2{
+  right:100px;
+  top:100px;
+}
+.player-3{
+  left:100px;
+  bottom:100px;
+}
+.player-4{
+  right:100px;
+  bottom:100px;
+}
+
+ .no04{
+  top:100px;
+}
+.no03{
+  top:180px;
+}
+.downgrade1{
+  top:260px;
+}
+.no02{
+  top:340px;
+}
+.no01{
+  top:420px;
+}
+
+.no17{
+  top:100px;
+  left:1200px;
+}
+.no18{
+  top:180px;
+  left:1200px;
+}
+.downgrade2{
+  top:260px;
+  left:1200px;
+}
+.no19{
+  top:340px;
+  left:1200px;
+}
+.no20{
+  top:420px;
+  left:1200px;
+}
+.no05{
+  left:180px;
+}
+.no06{
+  left:260px;
+}
+.no07{
+  left:340px;
+}
+.no08{
+  left:420px;
+}
+.no09{
+  left:500px;
+}
+.no10{
+  left:580px;
+}
+.upgrade1{
+  left:720px;
+}
+.no11{
+  left:800px;
+}
+.no12{
+  left:880px;
+}
+.no13{
+  left:960px;
+}
+.no14{
+  left:1040px;
+}
+.no15{
+  left:1120px;
+}
+.no16{
+  left:1200px;
+}
+.no21{
+left: 1200px;
+top: 500px;
+}
+.no22{
+left: 1120px;
+top: 500px;
+}
+.no23{
+left:1040px;
+top:500px;
+}
+.no24{
+  left:960px;
+  top:500px;
+}
+.no25{
+  left:880px;
+  top:500px;
+}
+.no26{
+  left:800px;
+  top:500px;
+}
+.upgrade2{
+  top:500px;
+  left:720px;
+}
+.no27{
+  top:500px;
+  left:580px;
+
+}
+.no28{
+  top:500px;
+  left:500px;
+
+}
+.no29{
+  top:500px;
+  left:420px;
+}
+.no30{
+  top:500px;
+  left:340px;
+}
+.no31{
+  top:500px;
+  left:260px;
+}
+.no32{
+  top:500px;
+  left:180px;
+}
+
+
+
+.card-view{
+  height: 350px;
+  width: 250px;
+  background-color: white;
+  position: absolute;
+  bottom: 200px;
+  left: 558px;
+  display: none;
+  border: 5px solid black;
+
+}
+
+.warning{
+  position: absolute;
+  background-color: white;
+  border: 5px solid black;
+  display: none;
+
+}
+.warning-buy{
+  height: 200px;
+  width: 300px;
+  bottom:110px;
+  left:533px;
+
+}
+.warning-rent{
+  height: 270px;
+  width: 300px;
+
+  bottom:100px;
+  left:533px;
+
+}
+
+.warning-level{
+  height: 270px;
+  width: 300px;
+  bottom:100px;
+  left:533px;
+
+}
+.warning-button{
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+.game-over{
+  
+  left: 540px;
+  bottom: 36px;
+}
+.end-table{
+
+}
+.end-game-stats{
+  padding:10px;
+}
+
+.dont-pay{
+  bottom:10px;
+}
+.warning-arrest{
+  left: 520px;
+  width: 317px;
+  height: 218px;
+  bottom: 108px;
+}
+.warning-free{
+    left: 564px;
+    bottom: 106px;
+    padding: 10px
+}
+.warning-jail-leave{
+  display: none;
+    left: 400px;
+    bottom: 110px;
+    padding: 14px;
+}
+.jail-button{
+  width:75px;
+}
+
+.close-button{
+  position: static;
+}
+
+.sell-button{
+    background-color: red;
+    position: absolute;
+    color: white;
+    width: 58px;
+    margin-left: 10px;
+    display: none;
+    margin-right: 10px;
+    bottom: 11px;
+    left: 56px;
+}
+
+.broke-position-close{
+    position: absolute;
+    margin-left: 10px;
+}
+.appear{
+  display: block;
+}

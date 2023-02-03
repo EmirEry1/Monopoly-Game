@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Monopoly</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="game-board">
+
+
+        <div class="corner-box top-right">
+          <h1>Free Park</h1>
+        </div>
+
+        <div class="corner-box top-left">
+          <h1>Jail Visitor</h1>
+        </div>
+
+        <div class="corner-box bottom-left">
+          <h1>Start</h1>
+        </div>
+
+        <div class="corner-box bottom-right">
+          <h1>Go To Jail</h1>
+        </div>
+    <!-- Left Column -->
+        <div class="card no01 column tile">
+
+        </div>
+        <div class="card no02 column tile">
+        </div>
+        <div class="card downgrade1 column downgrade">
+
+        </div>
+        <div class="card no03 column tile">
+
+        </div>
+        <div class="card no04 column tile">
+
+        </div>
+        <!-- Right Column -->
+        <div class="card no17 column tile">
+
+        </div>
+        <div class="card no18 column tile">
+
+        </div>
+        <div class="card downgrade2 column downgrade">
+
+        </div>
+        <div class="card no19 column tile">
+
+        </div>
+        <div class="card no20 column tile">
+
+        </div>
+
+        <!-- Top Row -->
+        <div class="card no05 row tile">
+
+        </div>
+        <div class="card no06 row tile">
+
+        </div>
+        <div class="card no07 row tile">
+
+        </div>
+        <div class="card no08 row tile">
+
+        </div>
+        <div class="card no09 row tile">
+        </div>
+
+        <div class="card no10 row tile">
+
+        </div>
+        <div class="card upgrade1 row upgrade">
+
+        </div>
+        <div class="card no11 row tile">
+
+        </div>
+        <div class="card no12 row tile">
+
+        </div>
+        <div class="card no13 row tile">
+
+        </div>
+        <div class="card no14 row tile">
+
+        </div>
+        <div class="card no15 row tile">
+
+        </div>
+        <div class="card no16 row tile">
+
+        </div>
+
+
+
+
+
+        <!-- Bottom Row -->
+
+
+
+        <div class="card no21 row tile">
+
+        </div>
+        <div class="card no22 row tile">
+
+        </div>
+        <div class="card no23 row tile">
+
+        </div>
+        <div class="card no24 row tile">
+
+        </div>
+        <div class="card no25 row tile">
+
+        </div>
+        <div class="card no26 row tile">
+
+        </div>
+        <div class="card upgrade2 row upgrade">
+
+        </div>
+        <div class="card no27 row tile">
+
+        </div>
+        <div class="card no28 row tile">
+
+        </div>
+        <div class="card no29 row tile">
+
+        </div>
+        <div class="card no30 row tile">
+
+        </div>
+        <div class="card no31 row tile">
+
+        </div>
+
+        <div class="card no32 row tile">
+
+        </div>
+
+        <div class="turn-bar">
+            <h1>Player 1's Turn</h1>
+        </div>
+
+        <div class="player-bar player-1">
+          <h1>Player 1</h1>
+          <h2>Wealth: 0$</h2>
+        </div>
+        <div class="player-bar player-2">
+          <h1>Player 2</h1>
+          <h2>Wealth: 0$</h2>
+        </div>
+        <div class="player-bar player-3">
+          <h1>Player 3</h1>
+          <h2>Wealth: 0$</h2>
+        </div>
+        <div class="player-bar player-4">
+          <h1>Player 4</h1>
+          <h2>Wealth: 0$</h2>
+        </div>
+
+        <button class="buy-button" type="button" name="button"><h1>Buy</h1></button>
+
+
+        <img class="dice first-die" src="images/dice1.png" alt="">
+        <img class="dice second-die" src="images/dice1.png" alt="">
+        <button class="roll-dice" type="button" name="roll"><h1>Roll!</h1></button>
+        <button class="sell-alert" type="button" name="button"></button>
+
+        <img class="circle player-image" src="images/circle.png" alt="">
+        <img class="square player-image" src="images/square.png" alt="">
+        <img class="triangle player-image" src="images/triangle.png" alt="">
+        <img class="hexagon player-image" src="images/hexagon.png" alt="">
+
+
+
+      </div>
+
+
+
+
+      </div>
+      <div class="card-view">
+        <h1>Name: <span class="card-name">Tile</span></h1>
+        <h2>Price: <span class="price"> 100$</span></h2>
+        <h2>Level: <span class="level"> 1</span></h2>
+        <h2>Owner: <span class="owner">None</span></h2>
+        <table>
+          <tr>
+            <td>Level 1</td>
+            <td>Level 2</td>
+            <td>Level 3</td>
+            <td>Level 4</td>
+            <td>Level 5</td>
+          </tr>
+          <tr>
+            <td class="rent-level">100$</td>
+            <td class="rent-level">100$</td>
+            <td class="rent-level">100$</td>
+            <td class="rent-level">100$</td>
+            <td class="rent-level">100$</td>
+          </tr>
+
+
+
+        </table>
+
+          <button class="close-button" type="button" name="button">
+            <h3>Close</h3>
+          </button>
+          <button class="sell-button" type="button" name="button">
+            <h3>Sell</h3>
+          </button>
+      </div>
+
+      <!-- Warnings -->
+
+      <div class="warning warning-buy">
+          <h1>Do you want to buy this property</h1>
+          <button class="warning-button yes" type="button" name="button">Yes</button>
+          <button class="warning-button no" type="button" name="button">No</button>
+      </div>
+
+      <div class="warning warning-rent">
+        <h1>You have to pay rent to <span class="tile-owner">owner</span> for this property</h1>
+        <h2>The rent fee is: <span class="rent-fee">0</span>$</h2>
+        <button class="warning-button ok" type="button" name="button">Ok</button>
+      </div>
+      <div class="warning warning-level">
+        <h1>This tile has leveled up!</h1>
+        <h2>New Level: <span class="level-show">1</span></h2>
+        <button class="warning-button ok-level" type="button" name="button">Ok</button>
+      </div>
+      <div class="warning warning-arrest">
+        <h1 class="arrest-text">You've got arrested!</h1>
+        <h2>Do you want to be free for 100$?</h2>
+        <button class="warning-button pay jail-button" type="button" name="button">Pay</button>
+        <button class="warning-button dont-pay jail-button" type="button" name="button">Dont Pay</button>
+
+      </div>
+      <div class="warning warning-free">
+
+        <h1>Congratulations</h1>
+        <h1>You are free!</h1>
+        <button class="warning-button ok-free" type="button" name="button">Ok</button>
+      </div>
+      <div class="warning warning-jail-leave">
+        <h2>Unfortunately you have to pay 100$ to leave prison.</h2>
+        <button class="warning-button ok-leave"type="button" name="button">Ok</button>
+
+      </div>
+      <div class="warning game-over">
+        <table class="end-table">
+          <h1>Game Over!</h1>
+          <tr>
+           <td class="end-game-stats"><h2>1)</h2></td>
+           <td class="end-game-stats"><h2>Player1</h2></td>
+           <td class="end-game-stats"><h2>Wealth: <span>0</span>$</h2></td>
+          </tr>
+          <tr>
+           <td class="end-game-stats"><h2>2)</h2></td>
+           <td class="end-game-stats"><h2>Player2</h2></td>
+           <td class="end-game-stats"><h2>Wealth: <span>0</span>$</h2></td>
+
+          <tr>
+            <tr>
+             <td class="end-game-stats"><h2>3)</h2></td>
+             <td class="end-game-stats"><h2>Player3</h2></td>
+             <td class="end-game-stats"><h2>Wealth: <span>0</span>$</h2></td>
+
+            <tr>
+              <tr>
+               <td class="end-game-stats"><h2>4)</h2></td>
+               <td class="end-game-stats"><h2>Player4</h2></td>
+               <td class="end-game-stats"><h2>Wealth: <span>0</span>$</h2></td>
+
+              <tr>
+        </table>
+
+      </div>
+
+
+
+      <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
